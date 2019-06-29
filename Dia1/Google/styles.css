@@ -1,0 +1,28 @@
+.contenedor {
+    padding-left: 600px;
+    padding-top: 200px;
+}
+
+.logo {
+    display: block;
+    height: 110px;
+}
+
+.buscador {
+    display: block;
+    width: 320px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.boton {
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 15px;
+    background: gray;
+    color: white;
+}
+
+#suerte {
+    margin-left: 100px;
+}

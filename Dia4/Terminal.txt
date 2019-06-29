@@ -1,0 +1,2 @@
+ls -> Muestra los elementos.
+cd -> Change directiry, nos movemos a una carpeta.

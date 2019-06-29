@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 500px;
+    background-color: violet;
+}
+
+.elemento1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.elemento2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.elemento3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
