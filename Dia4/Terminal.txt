@@ -5,3 +5,5 @@
 * git add -A -> Preparamos los cambios que vamos a subir
 * git commit -m "mensaje" -> Asignamos un mensaje al cambio que agregamos anteriormente
 * git push origin master -> Subimos cambios a github
+* git clone -> Clonamos repositorio a partir de una liga que obtenemos de github
+* git pull -> Obtenemos cambios que se encuentran en el repositorio
