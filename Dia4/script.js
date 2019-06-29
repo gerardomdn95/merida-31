@@ -30,17 +30,28 @@ function cobrar(monto) {
 let encuentro = "Calle 22, colonia México, Mérida.";
 let destino = "Plaza La Isla";
 
-function jugar(j1, j2) {
-    ...
-}
-
 jugar("piedra", "papel");
 jugar("piedra", "piedra");
 jugar("piedra", "tijeras");
 jugar("pollo", "papel");
 
-
-
-
 pedirUber(encuentro, destino);
 cobrar(110);
+
+
+// RFC
+
+function rfc(nombre, apellidoP, apellidoM, dia, mes, año, homoclave) {
+    let resultado = "";
+
+    console.log(resultado);
+}
+
+// Primera letra de tu primer apellido
+// Primera vocal de tu primer apellido
+// Primera letra del segundo apellido
+// Primera letra primer nombre
+// Dos últimos del año de nacimiento
+// mes de nacimiento en dos dígitos
+// Dos digitos del día de nacimiento
+// HOMOCLAVE
