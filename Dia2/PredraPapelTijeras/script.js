@@ -1,6 +1,11 @@
 
-const j1 = "tijeras";
-const j2 = "papel";
+let j2 = "papel";
+
+function print() {
+    let j1 = document.getElementById("j1").value;
+    document.getElementById("winner").innerHTML = "Cinta blanca";
+    console.log(j1);
+}
 
 if (j1 === 'piedra' && j2 === 'piedra') {
     console.log('Empate');
