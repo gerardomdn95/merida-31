@@ -1,0 +1,53 @@
+#logo {
+    height: 45px;
+}
+
+.my-navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 0px - 540px */
+@media(max-width: 540px) {
+    .title {
+        text-align: center;
+        color: aquamarine;
+    }
+}
+
+/* 540px - 720px */
+@media(min-width: 540px) {
+    .title {
+        text-align: center;
+        color: red;
+    }
+}
+
+/* 720px - 960px */
+@media(min-width: 720px) {
+    .title {
+        text-align: left;
+        color: green;
+    }
+}
+
+/* 1140px y más */
+@media(min-width: 1140px) {
+    .title {
+        text-align: left;
+        color: pink;
+    }
+}
+
+
+/* .card {
+    width: 30%;
+} */
