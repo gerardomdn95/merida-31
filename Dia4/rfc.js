@@ -1,6 +1,8 @@
 function getRfc(nom, apeP, apeM, anio, mes, dia, homo) {
     let vocalesApellidoP = [];
-    for (i = 0; i <= apeP.length; i++) {
+    // 012345
+    // Medina                6
+    for (let i = 0; i <= apeP.length; i++) {
         if (apeP[i] === "a" ||
             apeP[i] === "e" || 
             apeP[i] === "i" ||
@@ -11,11 +13,18 @@ function getRfc(nom, apeP, apeM, anio, mes, dia, homo) {
             apeP[i] === "I" ||
             apeP[i] === "O" ||
             apeP[i] === "U") {
+                console.log(apeP[i]);
                 vocalesApellidoP.push(apeP[i]);
         }
     }
-    const apellidoP = (apeP.substring(0, 1) === 'Ñ' || apeP.substring(0, 1) === 'ñ' ? 
-                        'X' : peP.substring(0, 1)) + vocalesApellidoP[0];
+    console.log(vocalesApellidoP);
+    const apellidoP = (apeP.substring(0, 1) === 'Ñ' || apeP.substring(0, 1) === 'ñ' ? 'X' : apeP.substring(0, 1)) + vocalesApellidoP[0];
+    if(edad >= 18) {
+        mayorDeEdad = "Es mayor de edad";
+    } else {
+        mayorDeEdad = "No es mayor de edad";
+    }
+
     const apellidoM = apeM.substring(0, 1);
     const nombre = nom.substring(0, 1);
     const anioNacimiento = anio.substring(2, 4);
@@ -27,5 +36,5 @@ function getRfc(nom, apeP, apeM, anio, mes, dia, homo) {
     console.log(rfc);
 }
 
-getRfc("Gerardo", "Ñuna", "Romero", "1995", "07", "19", "XXX");
+getRfc("Gerardo", "Medina", "Romero", "1995", "07", "19", "XXX");
 // MERG950719XXX
