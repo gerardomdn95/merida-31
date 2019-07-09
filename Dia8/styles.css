@@ -1,0 +1,17 @@
+.card {
+    margin-top: 50px;
+}
+
+.card-header-title {
+    font-size: 90px;
+    display: flex;
+    color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+#vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
