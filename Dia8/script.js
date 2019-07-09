@@ -61,7 +61,12 @@ let alakazam = {
     image: "https://vignette.wikia.nocookie.net/pokemonfanon/images/2/2a/Faba_Alakazam.png/revision/latest?cb=20171110183541",
     attack: function(move) {
         alert(`Alakazam used ${move}, it's super effective.`);
+        // 100 --> 70 
+        // 70 --> 40
+        // 40 --> 10
+        // 10 --> 0
         document.getElementById("pikachuHealth").value = document.getElementById("pikachuHealth").value - 30;
+
         if(document.getElementById("pikachuHealth").value <= 50 && document.getElementById("pikachuHealth").value >= 30) {
             document.getElementById("pikachuHealth").classList.remove("is-primary");
             document.getElementById("pikachuHealth").classList.add("is-warning");
@@ -69,7 +74,7 @@ let alakazam = {
             document.getElementById("pikachuHealth").classList.remove("is-warning");
             document.getElementById("pikachuHealth").classList.add("is-danger");
         } if (document.getElementById("pikachuHealth").value === 0) {
-            alert("Pikachu has fainted")
+            alert("Pikachu has fainted");
         }
     }
 }
