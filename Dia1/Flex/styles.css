@@ -1,6 +1,6 @@
 .contenedor {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     height: 500px;
     width: 500px;
     background-color: violet;

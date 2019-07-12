@@ -37,7 +37,7 @@ let pikachu = {
     health: 100,
     sprite: "https://s3.amazonaws.com/kandipatternspatterns/characters/1509581877_Pikachu_Sprite.png",
     image: "https://staticuestudio.blob.core.windows.net/buhomag/2018/11/detective-pikachu-1.jpg?auto=compress,format",
-    attack: function(move) {
+    attack: function (move) {
         alert(`Pikachu used ${move}, it's super effective.`);
     }
 }
@@ -59,7 +59,7 @@ let alakazam = {
     health: 100,
     sprite: "https://i.pinimg.com/736x/66/0e/3e/660e3ecf3f0870c70acb21578a54cd47--pokemon-blanket-pokemon-sprites.jpg",
     image: "https://vignette.wikia.nocookie.net/pokemonfanon/images/2/2a/Faba_Alakazam.png/revision/latest?cb=20171110183541",
-    attack: function(move) {
+    attack: function (move) {
         alert(`Alakazam used ${move}, it's super effective.`);
         // 100 --> 70 
         // 70 --> 40
@@ -67,10 +67,10 @@ let alakazam = {
         // 10 --> 0
         document.getElementById("pikachuHealth").value = document.getElementById("pikachuHealth").value - 30;
 
-        if(document.getElementById("pikachuHealth").value <= 50 && document.getElementById("pikachuHealth").value >= 30) {
+        if (document.getElementById("pikachuHealth").value <= 50 && document.getElementById("pikachuHealth").value >= 30) {
             document.getElementById("pikachuHealth").classList.remove("is-primary");
             document.getElementById("pikachuHealth").classList.add("is-warning");
-        } else if(document.getElementById("pikachuHealth").value <= 30) {
+        } else if (document.getElementById("pikachuHealth").value <= 30) {
             document.getElementById("pikachuHealth").classList.remove("is-warning");
             document.getElementById("pikachuHealth").classList.add("is-danger");
         } if (document.getElementById("pikachuHealth").value === 0) {
@@ -79,7 +79,8 @@ let alakazam = {
     }
 }
 
-console.log(pikachu);
+let pokemons = [pikachu, alakazam];
+console.log(pokemons);
 
 // Pikachu
 document.getElementById("pokeName").innerHTML = pikachu.name;
@@ -102,3 +103,48 @@ document.getElementById("alaMoveOne").innerHTML = alakazam.moves[0];
 document.getElementById("alaMoveTwo").innerHTML = alakazam.moves[1];
 document.getElementById("alaMoveThree").innerHTML = alakazam.moves[2];
 document.getElementById("alaMoveFour").innerHTML = alakazam.moves[3];
+
+
+// function getPokemon() {
+//     return fetch('https://pokeapi.co/api/v2/pokemon/dialga/')
+//         .then(response => response.json())
+//         .catch(error => console.warn(error));
+// }
+
+
+// let pokemon = getPokemon();
+// console.log(pokemon);
+
+// pokemon.then((data) => {
+//     pokemon = data;
+// })
+
+// setTimeout(function() {
+//     console.log(pokemon);
+// }, 5000);
+
+
+// class Pokemon {
+//     constructor(name, id){
+//         this.name = name;
+//         this.id = id;
+//     }
+// }
+
+// class WaterType extends Pokemon {
+//     constructor(name, id, weakness) {
+//         super(name, id);
+//         this.weakness = weakness;
+//     }
+// }
+
+// let Dialga = new Pokemon("Dialga", 300);
+// console.log(Dialga);
+
+// let squirtle = new WaterType("Squirtle", 7, "Grass");
+// console.log(squirtle);
+
+
+// Clase Pokemon
+// Tipo Electrico
+// Tipo 
