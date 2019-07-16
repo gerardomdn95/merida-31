@@ -1,3 +1,5 @@
+// Este ejercicio convierte un número décimal a binario
+
 function decimalToBinary(a) {
     let binary = []
     while (a > 0) {
